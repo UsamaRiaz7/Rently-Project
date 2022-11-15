@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>    
+    <div class="header" style="background-color:rgb(253, 137, 94);">
+        <img src="ss.png" alt="" style="height: 80px;">
+        <div class="header-right">
+            <img src="ii.jpg" alt="" style="height: 100px;border-radius: 30px;" >         
+        </div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><u>DASHBOARD</u></a>
+        <a href="#">Products for rent</a>
+        <a href="#">My Products for rent</a>
+        <a href="#">My booked/Rented Products</a>
+        <a href="#"><u>COLLECT RENT</u></a>
+        
+      </div>
+      
+      <div id="main"></div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Usama Rently Products Services</span>
+      </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-success" onclick="addnewpro()">Add new Product</button>
+      
+      <center><h3>Our Services & Products(tenant)</h3></center>
+      
+      <center><h4>These Products are on Rent</h4><br><br>
+
+      <div class="row">
+        <div class="column">
+          <img src="1.jpg" alt="" style="width:100%"><br>
+          <h3>rent = 20000</h3>
+        </div>
+        <div class="column">
+          <img src="2.jpg" alt="" style="width:100%"><br>
+          <h3>rent = 20000</h3>
+        </div>
+        <div class="column">
+          <img src="3.jpg" alt="" style="width:100%"><br>
+          <h3>rent = 20000</h3>
+        </div>
+      </div>
+      <br><br><br>
+      <h4>These are our Products available for rent</h4><br><br><br><br><br>
+      
+      <div class="row">
+        <div class="column">
+          <img src="10.jpg" alt="" style="width:100%"><br>
+          <h3>rent = 20000</h3>
+        </div>
+        <div class="column">
+          <img src="8.jpg" alt="" style="width:100%">
+          <br>
+          <h3>rent = 20000</h3>
+        </div>
+        <div class="column">
+          <img src="12.jpg" alt="" style="width:100%"><br>
+          <h3>rent = 20000</h3>
+        </div>
+      </div>
+
+
+      <footer>
+        <h3>Thank you for choosing our Services</h3><br>
+        <img src="ss.png" alt="" style="height: 80px;">
+      </footer>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "150px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+
+      function nextpage()
+      {
+        window.open('http://127.0.0.1:5500/proforrent.html','blank');
+      }
+      function nextpage1()
+      {
+        window.open('http://127.0.0.1:5500/3rdtab.html','blank');
+      }
+      function nextpage2()
+      {
+        window.open('http://127.0.0.1:5500/2ndtab.html','blank');
+      }
+      function nextpage3()
+      {
+        window.open('http://127.0.0.1:5500/pcrent.html','blank');
+      }
+      </script>
+
+</body>
+</html>

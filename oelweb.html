@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(185, 175, 175);">
+
+<center><form id="loginForm" style="background-color: rgb(129, 54, 54); width: 300px;margin-top: 60px;">
+    <br><br>
+    <h2 style="color: white;">Login Form</h2><br>
+
+  <label for="username" style="color: white;">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter Username" required>
+  <br><br>
+  <label for="email" style="color: white;">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" id="email" name="email" placeholder="Enter Email" required>
+  <br><br>
+  <label for="password" style="color: white;">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+  <br><br>
+  <input type="submit" value="Submit" style="width: 260px;height: 40px;" onclick="nextpage()"><br><br><br>
+</form></center>
+
+<script>
+var form = document.getElementById("loginForm");
+form.onsubmit = function(e) {
+  e.preventDefault();
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  if (username.match(/^[a-zA-Z]+$/)) {
+    if (email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+      if (password.match(/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/)) {
+        alert("Account created successfully!");
+        form.reset();
+      } else {
+        alert("Error: Password must contain at least 5 characters, including uppercase and special character");
+      }
+    } else {
+      alert("Error: Please enter a valid email address");
+    }
+  } else {
+    alert("Error: Please enter only alphabet characters in username");
+  }
+}
+function nextpage()
+{
+    window.open('http://127.0.0.1:5500/f1.html','blank');
+}
+</script>
+</body>
+</html>

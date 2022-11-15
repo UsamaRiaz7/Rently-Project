@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header" style="background-color:rgb(253, 137, 94);">
+        <img src="ss.png" alt="" style="height: 80px;">
+        <div class="header-right">
+            <img src="ii.jpg" alt="" style="height: 100px;border-radius: 30px;" >         
+        </div>
+      </div>
+
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">DashBoard</a>
+        <a href="#">Collect Rent</a>
+        
+      </div>
+      
+      <div id="main"></div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Usama Rently Products Services</span>
+      </div>
+      
+
+      <center><h3>This list is for Collect Rents</h3></center>
+      <center><table border="1px" style="width: 50%;">
+        <tr>
+            
+                <th>S.No</th>
+                <th>Bike name</th>
+                <th>bike rent</th>
+                <th>Collect Rent</th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>suzuki gd</td>
+            <td>20000</td>
+            <td><button type="button">collect rent</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>suzuki GS</td>
+            <td>20000</td>
+            <td><button type="button">collect rent</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>suzuki 125</td>
+            <td>20000</td>
+            <td><button type="button">collect rent</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>suzuki YBR</td>
+            <td>20000</td>
+            <td><button type="button">collect rent</button></td>
+        </tr>
+      </table>
+      <h3>This list is for Pay rents</h3>
+      <table border="1px" style="width: 50%;">
+        <tr>
+            
+                <th>S.No</th>
+                <th>Bike name</th>
+                <th>bike rent</th>
+                <th>Pay Rent</th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Wagon car type</td>
+            <td>10000</td>
+            <td><button type="button">Pay rent</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Corolla</td>
+            <td>10000</td>
+            <td><button type="button">Pay rent</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>fortuner</td>
+            <td>10000</td>
+            <td><button type="button">Pay rent</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>toyota Corolla</td>
+            <td>10000</td>
+            <td><button type="button">Pay rent</button></td>
+        </tr>
+      </table></center>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "220px";
+        document.getElementById("main").style.marginLeft = "150px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      function nextpage()
+      {
+        window.open('http://127.0.0.1:5500/proforrent.html','blank');
+      }
+      function nextpage1()
+      {
+        window.open('http://127.0.0.1:5500/3rdtab.html','blank');
+      }
+      function nextpage2()
+      {
+        window.open('http://127.0.0.1:5500/2ndtab.html','blank');
+      }
+      function nextpage3()
+      {
+        window.open('http://127.0.0.1:5500/pcrent.html','blank');
+      }
+      </script>
+<br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+  <h3>Thank you for choosing our Services</h3><br>
+  <img src="ss.png" alt="" style="height: 80px;">
+</footer>
+</body>
+</html>
